@@ -54,6 +54,10 @@ img {
   display: block;
 }
 
+p, a, span {
+  overflow-wrap: break-word;
+}
+
 /*================ NAVBAR ================*/
 
 .header {
@@ -788,6 +792,13 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: 0.35s;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.contact-card > div {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .contact-card:hover {
@@ -806,7 +817,9 @@ img {
 
 .contact-card p {
   color: #94a3b8;
+  overflow-wrap: anywhere;
   word-break: break-word;
+  max-width: 100%;
 }
 
 .contact-form {
