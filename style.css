@@ -638,7 +638,8 @@ ul {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(240px, 1fr));
+    grid-template-columns:repeat(4,minmax(240px,1fr));
+ 
   gap: 25px;
   max-width: 1400px;
   margin: 70px auto 0;
@@ -1242,4 +1243,380 @@ ul {
 ::selection {
   background: #7c5cff;
   color: #fff;
+}
+@media (max-width: 768px) {
+
+  .hero{
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+    padding-top: 120px;
+  }
+
+  .hero-content{
+    width:100%;
+  }
+
+  .hero-image{
+    width:100%;
+  }
+
+  .description{
+    max-width:100%;
+    margin:auto;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .social-icons{
+    justify-content:center;
+  }
+
+}
+@media(max-width:768px){
+
+.project-buttons{
+    flex-direction:column;
+}
+
+.project-buttons .btn{
+    width:100%;
+}
+
+}
+@media(max-width:768px){
+
+.contact-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.contact-form button{
+    width:100%;
+}
+
+}
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+*{
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+html,body{
+    width:100%;
+}
+/*================ PREMIUM RESPONSIVE =================*/
+
+/* Laptop */
+@media (max-width:1200px){
+
+.hero{
+    gap:50px;
+}
+
+.hero h1{
+    font-size:65px;
+}
+
+.about-content h2,
+.skills-header h2,
+.projects-header h2,
+.contact-header h2{
+    font-size:48px;
+}
+
+.image-circle{
+    width:400px;
+    height:400px;
+}
+
+.image-inner{
+    width:380px;
+    height:380px;
+}
+
+.skills-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.projects-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* Tablet */
+@media (max-width:992px){
+
+.header{
+    padding:18px 6%;
+}
+
+.navbar{
+    gap:18px;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:45px;
+    padding-top:120px;
+}
+
+.hero-content{
+    max-width:100%;
+}
+
+.description{
+    max-width:100%;
+    margin:auto;
+}
+
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+.scroll-down{
+    display:none;
+}
+
+.about{
+    flex-direction:column;
+    text-align:center;
+    gap:40px;
+}
+
+.about-content{
+    max-width:100%;
+}
+
+.about-info{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.projects-container{
+    grid-template-columns:1fr;
+}
+
+.skills-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.image-circle{
+    width:330px;
+    height:330px;
+}
+
+.image-inner{
+    width:310px;
+    height:310px;
+}
+
+.about-circle{
+    width:320px;
+    height:320px;
+}
+
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+section{
+    padding:70px 6%;
+}
+
+.navbar{
+    display:none;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.hero h1{
+    font-size:44px;
+    letter-spacing:-1px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+.intro{
+    font-size:18px;
+}
+
+.description{
+    font-size:15px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.hero-buttons .btn{
+    width:100%;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+.image-circle{
+    width:280px;
+    height:280px;
+}
+
+.image-inner{
+    width:260px;
+    height:260px;
+}
+
+.about-circle{
+    width:260px;
+    height:260px;
+}
+
+.about-content h2,
+.skills-header h2,
+.projects-header h2,
+.contact-header h2{
+    font-size:36px;
+}
+
+.about-info{
+    grid-template-columns:1fr;
+}
+
+.skills-container{
+    grid-template-columns:1fr;
+}
+
+.skill-card{
+    height:auto;
+}
+
+.projects-container{
+    grid-template-columns:1fr;
+}
+
+.project-buttons{
+    flex-direction:column;
+}
+
+.project-buttons .btn{
+    width:100%;
+}
+
+.contact-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.contact-form button{
+    width:100%;
+}
+
+.footer-social{
+    flex-wrap:wrap;
+}
+
+}
+
+
+/* Small Mobile */
+@media (max-width:480px){
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero h2{
+    font-size:19px;
+}
+
+.image-circle{
+    width:230px;
+    height:230px;
+}
+
+.image-inner{
+    width:210px;
+    height:210px;
+}
+
+.about-circle{
+    width:220px;
+    height:220px;
+}
+
+.about-content h2,
+.skills-header h2,
+.projects-header h2,
+.contact-header h2{
+    font-size:30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+}
+
+.btn{
+    padding:14px 20px;
+    font-size:15px;
+}
+
+}
+
+
+/* Extra Fixes */
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.project-card,
+.skill-card,
+.info-card,
+.contact-card{
+    width:100%;
+}
+
+.progress{
+    width:100%;
 }
